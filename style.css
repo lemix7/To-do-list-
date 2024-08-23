@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --primary-color: #ffffff;
+    --secondary-color: #1c1b1a;
+   
+}
+
+body{
+    font-family:  "Roboto", sans-serif;;
+    height: 100vh;
+    background-color: var(--primary-color);
+    background-image: url(imgs/Wallpaper\ 4k\ Fethi\ Bouhaouchine.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 2rem 2rem 4rem 2rem; ;
+    border-radius: 2rem ;
+    transition: all ease-in-out 0.5s;
+}
+
+.container h1{
+    font-size: 7rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+.user-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+input{
+    width: 500px;
+    border: none;
+    /* height: 54px; */
+    border-radius: 2rem 0 0 2rem;
+    padding: 1.5rem 2rem;
+    font-size: 2rem;
+    outline: none;
+    caret-color: var(--secondary-color);
+}
+
+input:focus{
+    outline: none;
+}
+
+.user-input .add-btn{
+    padding:  1.8rem 2rem;
+    font-weight: 600;
+    border-radius: 0 2rem 2rem 0;
+    border: none;
+    background-color: var(--primary-color);
+    color:  var(--secondary-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+
+.user-input .add-btn:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.tasks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+.tasks li {
+    cursor: pointer;;
+}
+
+li button{
+    padding:  1rem 1.5rem;
+    font-weight: 600;
+    border-radius: 2.8rem;
+    border: none;
+    background-color: var(--primary-color);
+    color:  var(--secondary-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+
+li button:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+ li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 2rem;
+}
+
+.remove-all{
+    padding:  2rem 4rem;
+    font-weight: 400;
+    border-radius: 2.8rem;
+    margin: 0 auto;
+    border: none;
+    background-color: var(--primary-color);
+    color:  var(--secondary-color);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+    text-transform: capitalize;
+}
+
+.note{
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    text-align: center;
+     
+}
+
