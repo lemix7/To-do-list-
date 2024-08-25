@@ -17,7 +17,7 @@ function adding (){
     newItem.textContent = userInput.value
 
     let doneBtn = document.createElement('button')
-    doneBtn.textContent = 'completed'
+    doneBtn.textContent = 'X'
 
     newItem.appendChild(doneBtn)
 
@@ -28,12 +28,11 @@ function adding (){
 
     doneBtn.style.cursor = 'pointer'
 
+      // function to remove the task when the user clicks on the completed button
+
     doneBtn.addEventListener('click',function(){
         newItem.remove()
     })
-
-
-    // function to make the task when completed the problem is it doesn't target the pressed item 
 
     userInput.value=''
 }
@@ -47,8 +46,10 @@ removeAll.addEventListener('click',function(){
 
 
 userInput.addEventListener('keydown', function(e) {
+
     if (e.code === "Enter" && userInput.value != '' ) {  //checks whether the pressed key is "Enter" and the text is not empty if so the adding function is invoked 
         adding(e);
     }
+    
 })
 
