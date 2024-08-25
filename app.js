@@ -7,7 +7,10 @@ let items =[]
 
 
 addButton.addEventListener('click',function(){
-   adding()
+   if(userInput.value != '' ){
+
+       adding()
+   }
 })
 
 
